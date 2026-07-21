@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Royal Spice | Restaurant</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">Royal <span>Spice</span></div>
+
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+
+            <a href="#menu" class="nav-btn">View Menu</a>
+        </nav>
+    </header>
+
+
+    <!-- HERO SECTION -->
+    <section id="home" class="hero">
+
+        <div class="hero-content">
+
+            <p class="welcome">WELCOME TO ROYAL SPICE</p>
+
+            <h1>Where Every Bite<br>
+                Tells a <span>Story.</span>
+            </h1>
+
+            <p class="hero-text">
+                Experience delicious Indian, Chinese and Continental
+                cuisine made with fresh ingredients and authentic flavours.
+            </p>
+
+            <div class="hero-buttons">
+                <a href="#menu" class="primary-btn">Explore Menu</a>
+                <a href="#contact" class="secondary-btn">Book a Table</a>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ABOUT SECTION -->
+    <section id="about" class="about">
+
+        <div class="about-image">
+            <div class="image-box">
+                🍽️
+            </div>
+        </div>
+
+        <div class="about-content">
+
+            <p class="section-label">ABOUT US</p>
+
+            <h2>Food Made With<br>
+                <span>Love & Passion</span>
+            </h2>
+
+            <p>
+                Royal Spice is a place where traditional flavours meet
+                modern dining. Our chefs prepare every dish using fresh
+                ingredients and carefully selected spices.
+            </p>
+
+            <p>
+                Whether you're enjoying a family dinner, celebrating
+                a special occasion, or simply craving delicious food,
+                we are here to make every moment memorable.
+            </p>
+
+            <a href="#contact" class="primary-btn">Discover More</a>
+
+        </div>
+
+    </section>
+
+
+    <!-- MENU SECTION -->
+    <section id="menu" class="menu-section">
+
+        <p class="section-label">OUR MENU</p>
+
+        <h2>Our Special <span>Dishes</span></h2>
+
+        <p class="menu-description">
+            Explore our chef's favourite dishes prepared specially for you.
+        </p>
+
+
+        <div class="menu-container">
+
+            <div class="menu-card">
+                <div class="food-icon">🍛</div>
+                <h3>Chicken Biryani</h3>
+                <p>Fragrant basmati rice cooked with delicious spices and tender chicken.</p>
+                <div class="price">₹249</div>
+                <button onclick="orderFood('Chicken Biryani')">
+                    Order Now
+                </button>
+            </div>
+
+
+            <div class="menu-card">
+                <div class="food-icon">🍕</div>
+                <h3>Cheese Pizza</h3>
+                <p>Freshly baked pizza topped with rich cheese and delicious toppings.</p>
+                <div class="price">₹299</div>
+                <button onclick="orderFood('Cheese Pizza')">
+                    Order Now
+                </button>
+            </div>
+
+
+            <div class="menu-card">
+                <div class="food-icon">🍔</div>
+                <h3>Classic Burger</h3>
+                <p>Juicy burger served with fresh vegetables and our special sauce.</p>
+                <div class="price">₹149</div>
+                <button onclick="orderFood('Classic Burger')">
+                    Order Now
+                </button>
+            </div>
+
+
+            <div class="menu-card">
+                <div class="food-icon">🍝</div>
+                <h3>White Sauce Pasta</h3>
+                <p>Creamy pasta prepared with herbs, vegetables and delicious sauce.</p>
+                <div class="price">₹199</div>
+                <button onclick="orderFood('White Sauce Pasta')">
+                    Order Now
+                </button>
+            </div>
+
+
+            <div class="menu-card">
+                <div class="food-icon">🍰</div>
+                <h3>Chocolate Cake</h3>
+                <p>Soft and delicious chocolate cake perfect for every celebration.</p>
+                <div class="price">₹179</div>
+                <button onclick="orderFood('Chocolate Cake')">
+                    Order Now
+                </button>
+            </div>
+
+
+            <div class="menu-card">
+                <div class="food-icon">🥤</div>
+                <h3>Fresh Juice</h3>
+                <p>Refreshing fruit juice prepared using fresh seasonal fruits.</p>
+                <div class="price">₹99</div>
+                <button onclick="orderFood('Fresh Juice')">
+                    Order Now
+                </button>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- CONTACT SECTION -->
+    <section id="contact" class="contact">
+
+        <div class="contact-content">
+
+            <p class="section-label">CONTACT US</p>
+
+            <h2>Let's Make Your<br>
+                <span>Day Delicious</span>
+            </h2>
+
+            <p>
+                Have a question or want to reserve a table?
+                Get in touch with us today.
+            </p>
+
+            <div class="contact-info">
+                <p>📍 Main Street, Andhra Pradesh</p>
+                <p>✉️ royalspice@gmail.com</p>
+            </div>
+
+        </div>
+
+
+        <form id="contactForm">
+
+            <input type="text"
+                   id="name"
+                   placeholder="Rajeswari Botcha"
+                   required>
+
+            <input type="email"
+                   id="email"
+                   placeholder="rajeswaribotcha60@gmail.com"
+                   required>
+
+            <button type="submit" class="primary-btn">
+                Send Message
+            </button>
+
+        </form>
+
+    </section>
+
+
+    <!-- FOOTER -->
+    <footer>
+
+        <div class="footer-logo">
+            Royal <span>Spice</span>
+        </div>
+
+        <p>
+            Delicious food. Fresh ingredients. Great experience.
+        </p>
+
+        <div class="socials">
+            <a href="#">Instagram</a>
+            <a href="#">Facebook</a>
+            <a href="#">Twitter</a>
+        </div>
+
+        <p class="copyright">
+            © 2026 Royal Spice. All Rights Reserved.
+        </p>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
